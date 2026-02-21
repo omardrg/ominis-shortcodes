@@ -1,0 +1,46 @@
+# Copyright (C) 2025 Onaweb
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Ominis Shortcodes 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ominis-shortcodes/\n"
+"POT-Creation-Date: 2026-02-21 12:00+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ominis-shortcodes.php:5
+msgid "Plugin to interpret shortcodes and create Bootstrap structures."
+msgstr ""
+
+#: ominis-shortcodes.php:16
+msgid "Ominis Shortcodes Instructions"
+msgstr ""
+
+#: ominis-shortcodes.php:16
+msgid "O Shortcodes"
+msgstr ""
+
+#: ominis-shortcodes.php:24
+msgid "Ominis Shortcodes: Instructions <small>2.0.0</small>"
+msgstr ""
+
+#: ominis-shortcodes.php:27
+msgid "You have three [shortcodes] available to generate the Bootstrap 5 <em>card</em> component:"
+msgstr ""
+
+#: ominis-shortcodes.php:30
+msgid "This shortcode opens and closes the <em>card</em> component."
+msgstr ""
+
+#: ominis-shortcodes.php:33
+msgid "Inside [panel], this shortcode opens and closes the text area."
+msgstr ""
+
+#: ominis-shortcodes.php:36
+msgid "Inside [panel], this shortcode opens and closes the area for images."
+msgstr ""

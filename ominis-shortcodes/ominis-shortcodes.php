@@ -1,13 +1,23 @@
 <?php 
 /**
 * Plugin Name: Ominis Shortcodes
-* Plugin URI: http://onaweb.cat
 * Description: Plugin to interpret shortcodes and create Bootstrap structures.
 * Version: 2.0.0
 * Author: Onaweb
 * Author URI: http://onaweb.cat
+* License:     GPLv2 or later
+* License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 * Domain Path: /languages
+*
+* This program is free software; you can redistribute it and/or modify it under the terms of the GNU
+* General Public License version 2, as published by the Free Software Foundation. You may NOT assume
+* that you can use any other version of the GPL.
+*
+* This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
+* even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 **/
+
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 // Add menu item
 add_action('admin_menu', 'ominis_shortcodes_menu');
@@ -22,19 +32,19 @@ function ominis_shortcodes_menu(){
 function ominis_shortcodes_instrucciones() {
 ?>
 	<div class="wrap">
-		<h2><?php _e('Ominis Shortcodes: Instructions <small>2.0.0</small>','ominis-shortcodes');?></h2>
+		<h2><?php esc_html_e('Ominis Shortcodes: Instructions <small>2.0.0</small>','ominis-shortcodes');?></h2>
 		
 
-		<p><?php _e('You have three [shortcodes] available to generate the Bootstrap 5 <em>card</em> component:','ominis-shortcodes');?></p>
+		<p><?php esc_html_e('You have three [shortcodes] available to generate the Bootstrap 5 <em>card</em> component:','ominis-shortcodes');?></p>
 		<dl>
 			<dt style="font-weight:bold;">[panel]...[/panel]</dt>
-			<dd><?php _e('This shortcode opens and closes the <em>card</em> component.','ominis-shortcodes');?></dd>
+			<dd><?php esc_html_e('This shortcode opens and closes the <em>card</em> component.','ominis-shortcodes');?></dd>
 			
 			<dt style="font-weight:bold;">[panel_texto]...[/panel_texto]</dt>
-			<dd><?php _e('Inside [panel], This shortcode opens and closes the text area.','ominis-shortcodes');?></dd>
+			<dd><?php esc_html_e('Inside [panel], This shortcode opens and closes the text area.','ominis-shortcodes');?></dd>
 			
 			<dt style="font-weight:bold;">[panel_img]...[/panel_img]</dt>
-			<dd><?php _e('Inside [panel], this shortcode opens and closes the area for images.','ominis-shortcodes');?></dd>
+			<dd><?php esc_html_e('Inside [panel], this shortcode opens and closes the area for images.','ominis-shortcodes');?></dd>
 			
 		</dl>
 	</div>

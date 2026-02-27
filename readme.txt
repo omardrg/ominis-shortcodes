@@ -31,6 +31,12 @@ No, only if it's compatible with Bootstrap 5.
 
 == Changelog ==
 
+= 2.0.2 =
+* Add flex styles to [panel_img]
+
+= 2.0.1 =
+* CorrectionsCorrections to be able to publish the plugin in the wordpress.org repository
+
 = 2.0.0 =
 * Compatible with Bootstrap 5.
 

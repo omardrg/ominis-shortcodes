@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Ominis Shortcodes 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ominis-shortcodes/\n"
 "POT-Creation-Date: 2026-02-21 12:00+0100\n"
-"PO-Revision-Date: 2026-02-22 19:59+0100\n"
+"PO-Revision-Date: 2026-03-11 13:55+0100\n"
 "Last-Translator: \n"
 "Language-Team: Català\n"
 "Language: ca_ES\n"
@@ -30,18 +30,18 @@ msgstr "O Shortcodes"
 msgid "Ominis Shortcodes: Instructions"
 msgstr "Ominis Shortcodes: Instruccions"
 
-#: ominis-shortcodes.php:44
+#: ominis-shortcodes.php:45
 msgid "You have three [shortcodes] available to generate the Bootstrap 5 %1$s component:"
 msgstr "Tens disponibles tres [shortcodes] per generar el component de %1$s de Bootstrap 5:"
 
-#: ominis-shortcodes.php:47
+#: ominis-shortcodes.php:49
 msgid "This shortcode opens and closes the %1$s component."
 msgstr "Aquest shortcode obri i tanca el component de %1$s."
 
-#: ominis-shortcodes.php:50
+#: ominis-shortcodes.php:52
 msgid "Inside [panel], this shortcode opens and closes the text area."
 msgstr "Dins de [panel], aquest shortcode obri i tanca l'àrea de text."
 
-#: ominis-shortcodes.php:53
+#: ominis-shortcodes.php:55
 msgid "Inside [panel], this shortcode opens and closes the area for images."
 msgstr "Dins de [panel], aquest shortcode obri i tanca l'àrea per a les imatges."

@@ -41,10 +41,12 @@ function ominis_shortcodes_instrucciones() {
     <div class="wrap">
         <h2><?php esc_html_e('Ominis Shortcodes: Instructions','ominis-shortcodes');?> <small>2.0.2</small></h2>
 
-        <p><?php echo sprintf( __('You have three [shortcodes] available to generate the Bootstrap 5 %1$s component:','ominis-shortcodes'), '<em>card</em>' );?></p>
+        <p><?php /* translators: %1$s is the HTML tag <em>card</em>.*/
+        echo sprintf( esc_html__('You have three [shortcodes] available to generate the Bootstrap 5 %1$s component:','ominis-shortcodes'), '<em>card</em>' );?></p>
         <dl>
             <dt style="font-weight:bold;">[panel]...[/panel]</dt>
-            <dd><?php echo sprintf( __('This shortcode opens and closes the %1$s component.','ominis-shortcodes'), '<em>card</em>' );?></dd>
+            <dd><?php /* translators: %1$s is the HTML tag <em>card</em>.*/
+            echo sprintf( esc_html__('This shortcode opens and closes the %1$s component.','ominis-shortcodes'), '<em>card</em>' );?></dd>
             
             <dt style="font-weight:bold;">[panel_texto]...[/panel_texto]</dt>
             <dd><?php esc_html_e('Inside [panel], this shortcode opens and closes the text area.','ominis-shortcodes');?></dd>
@@ -61,32 +63,34 @@ function ominis_shortcodes_instrucciones() {
  */
 
 // [panel]
-function panel_func( $atts, $content = null ) {
-    // Eliminamos <p>, <br> automáticos alrededor de shortcodes internos
+function ominis_panel_func( $atts, $content = null ) {
+    // Remove the automatic <p> and <br> tags that WordPress adds around inner shortcodes.
     $inner = shortcode_unautop( do_shortcode( $content ) );
 	$inner = str_replace("<p></p>","",$inner);
     $texto = '<dl class="card">' . $inner . '</dl>';
-    return $texto;
+    return wp_kses_post($texto);
 }
-add_shortcode( 'panel', 'panel_func' );
+add_shortcode( 'panel', 'ominis_panel_func' );
 
 // [panel_texto]
-function panel_texto_func( $atts, $content = null ) {
+function ominis_panel_texto_func( $atts, $content = null ) {
+    // Remove the automatic <p> and <br> tags that WordPress adds around inner shortcodes.
     $inner = shortcode_unautop( do_shortcode( $content ) );
  	$inner = str_replace("<p></p>","",$inner);
     $texto = '<dt class="card-body text-justify fw-normal">' . $inner . '</dt>';
-    return $texto;
+    return wp_kses_post($texto);
 }
-add_shortcode( 'panel_texto', 'panel_texto_func' );
+add_shortcode( 'panel_texto', 'ominis_panel_texto_func' );
 
 // [panel_img]
-function panel_img_func( $atts, $content = null ) {
+function ominis_panel_img_func( $atts, $content = null ) {
+    // Remove the automatic <p> and <br> tags that WordPress adds around inner shortcodes.
     $inner = shortcode_unautop( do_shortcode( $content ) );
 	$inner = str_replace("<p></p>","",$inner);
     $texto = '<dd class="card-footer d-flex flex-wrap flex-xl-nowrap mb-0">' . $inner . '</dd>';
-    return $texto;
+    return wp_kses_post($texto);
 }
-add_shortcode( 'panel_img', 'panel_img_func' );
+add_shortcode( 'panel_img', 'ominis_panel_img_func' );
 
 /**
  * Tell WordPress that these shortcodes should not receive autop/texturize.

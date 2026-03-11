@@ -29,18 +29,18 @@ msgstr ""
 msgid "Ominis Shortcodes: Instructions"
 msgstr ""
 
-#: ominis-shortcodes.php:44
+#: ominis-shortcodes.php:45
 msgid "You have three [shortcodes] available to generate the Bootstrap 5 %1$s component:"
 msgstr ""
 
-#: ominis-shortcodes.php:47
+#: ominis-shortcodes.php:49
 msgid "This shortcode opens and closes the %1$s component."
 msgstr ""
 
-#: ominis-shortcodes.php:50
+#: ominis-shortcodes.php:52
 msgid "Inside [panel], this shortcode opens and closes the text area."
 msgstr ""
 
-#: ominis-shortcodes.php:53
+#: ominis-shortcodes.php:55
 msgid "Inside [panel], this shortcode opens and closes the area for images."
 msgstr ""
